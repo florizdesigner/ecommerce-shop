@@ -1,5 +1,6 @@
-class PaymentsController {
+class PaymentController {
     async create (req, res, next) {
+
         res.json({status: "okay"})
     }
 
@@ -12,4 +13,4 @@ class PaymentsController {
     }
 }
 
-module.exports = new PaymentsController()
+module.exports = new PaymentController()
