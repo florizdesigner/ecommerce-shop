@@ -3,7 +3,8 @@ const router = new Router()
 const paymentController = require('../controllers/paymentController')
 
 router.post('/', paymentController.create)
-router.get('/', paymentController.get)
-router.post('/', paymentController.refund)
+router.get('/:id', paymentController.get)
+router.post('/refund', paymentController.refund)
+router.post('/webhook', paymentController.getWebhook)
 
 module.exports = router

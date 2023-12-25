@@ -1,6 +1,5 @@
 class PaymentController {
     async create (req, res, next) {
-
         res.json({status: "okay"})
     }
 
@@ -10,6 +9,11 @@ class PaymentController {
 
     async refund (req, res, next) {
         res.json({status: "okay2"})
+    }
+
+    async getWebhook (req, res, next) {
+        res.json({status: "ok_webhook"})
+        // запись в БД со статусом платежа
     }
 }
 
